@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <title>Simple Interest Calculator</title>
+    <meta name="description" content="Simple Interest Calculator created for Intermediate Web Development Final Project">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        Interest Rate Calculator
-        <div class="input-wrapper">
-            <div class="wrapper">
-                <label for="principal">Principal Amount</label>
-                <input type="number" id="principal" value="1000" />
-            </div>
-        </div>
-        <div class="input-wrapper">
-            <div class="wrapper">
-                <label for="rate">Rate (%)</label>
-                <input type="number" id="rate" value="5" />
-            </div>
-        </div>
-        <div class="input-wrapper">
-            <div class="wrapper">
-                <label for="time">Time (Years)</label>
-                <input type="number" id="time" value="1" />
-            </div>
-        </div>
-        <button id="calculate-btn" onclick="calculate()">Calculate</button>
-        <div id="result"></div>
-    </div>
-</body>
 
+    <h1>Simple Interest Calculator</h1>
+
+    <label>Principal:</label>
+    <input id="principal" type="number"><br>
+
+    <label>Rate:</label>
+    <input id="rate" type="number"><br>
+
+    <label>Time:</label>
+    <input id="time" type="number"><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="result"></p>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
 </html>
